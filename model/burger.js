@@ -12,7 +12,7 @@ let burger = {
 		orm.insertOne("burgers", cols, vals, (res) => {
 			cb(res);
 		});
-	}
+	},
 
 	updateOne: (objColVals, condition, cb) => {
 		orm.updateOne("burgers", objColVals, condition, (res) => {

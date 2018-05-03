@@ -7,7 +7,7 @@ const burger = require("../models/burger.js");
 
 router.get("/", (req, res) => {
   burger.selectAll((data) => {
-    vlet hbsObject = {
+    let hbsObject = {
       burgers: data
     };
   // console.log(hbsObject);
